@@ -4,37 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-      <!-- fonts -->
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="0-styles.css">
+      <!-- css -->
+     <link rel="stylesheet" href="0-styles.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
-    <img class="top-img" src="images/headphones_hero_1.jpg" alt="">
+    <div class="container">
 
-    <!-- header section -->
+        <div class="nav">
 
-    <div class="nav">
-
-        <div class="logo">
-            <img src="images/favicon.png" alt="">
-            <span>headphones</span>
+            <div class="logo">
+                <img src="images/favicon.png" alt="">
+                <span>headphones</span>
+            </div>
+    
+            <div class="links">
+                <a href="#">what we do</a>
+                <a href="#">our results</a>
+                <a href="#">contact us</a>
+            </div>
+    
         </div>
-
-        <div class="links">
-            <a href="#">what we do</a>
-            <a href="#">our results</a>
-            <a href="#">contact us</a>
+    
+    
+        <div class="text">
+            <h1>Lorem ipsum dolor sit amet lorem ipsum.</h1>
+            <p>Lorem ipsum dolor sit amet lorem ipsum.</p>
+        
+    
+         <button>CALL TO ACTION</button>
+    
+         <P class="long-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, pariatur impedit corporis 
+            aspernatur eos fugit id sunt ratione est voluptas odit quam consectetur quo! Delectus distinctio molestias eum iusto eos minima officia
+             ipsam ea nisi quod dicta fugit, 
+            rerum est molestiae sed. Fuga sapiente quisquam commodi eveniet debitis, ducimus nemo molestiae veritatis
+             !
+         </P>
         </div>
+        
+
+        <div class="pentagon"></div>
 
     </div>
+    
+    <script>
+  var count=0;
+   document.getElementsByClassName('pentagon')[0].addEventListener('click',function(){
+   count++;
+   if(count%2==1){
+    document.getElementsByClassName('links')[0].style.height='100px';
+    document.getElementsByClassName('pentagon')[0].style.backgroundImage="url('images/download.png')";
+   }
+   else{
+    document.getElementsByClassName('links')[0].style.height='0px';
+    document.getElementsByClassName('pentagon')[0].style.backgroundImage="url('images/humburger.png')";
+   } 
+   })
 
-   
+    </script>
+    
     
 </body>
 </html>
