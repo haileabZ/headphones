@@ -1,1 +1,265 @@
 
+  body{
+        margin: 0;
+        padding: 0;
+    }
+   
+
+    .container{
+        position: relative;
+      width: 100%;
+      height: 100vh;
+      background-image: url(images/headphones_hero_1.jpg);
+      background-position: center;
+      background-size: cover;
+
+    }
+    .nav{
+    width: 80%;
+    margin:  0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    }
+    .logo{
+  display: flex;
+  align-items: center;
+    }
+    .logo span{
+        color: white;
+        margin-left: 5%;
+        font-family: 'Spinnaker', sans-serif;
+    }
+    .links{
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .links a{
+        text-decoration: none;
+        color: white;
+    }
+    .links a:hover{
+
+        color: #FF6565;
+    }
+
+    .text{
+     max-width: 1000px;
+     margin: 200px auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: white;
+     text-align:center;
+     
+
+    }
+
+    .text h1{
+        margin: 0;
+    }
+    .text button{
+        background-color: #f31c1c;
+        padding: 10px 15px ;
+        border: none;
+        border-radius: 20px;
+        margin-top: 15px;
+        color: white;
+        box-shadow: 1px 1px 10px 0.5px black;
+    }
+
+    .text button:hover{
+        opacity: 0.9;
+    }
+
+    .long-text{
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .pentagon{
+     width: 20px;
+     height: 20px;
+     position:absolute; 
+     top: 10px;
+     left: 50px;
+     background-image: url(images/pentagone.png);
+     background-size: cover;
+     display: none;
+    }
+
+    .what-div{
+        text-align: center;
+        width: 60%;
+        margin: 10px auto;
+    }
+    .testiomonial{
+        width: 90%;
+        margin: 70px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+   }
+   .testiomonial div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+   }
+   .testiomonial div img{
+    width: 90px;
+   }
+
+
+    @media (max-width:480px){
+
+
+        .nav{ 
+     width: 30%;   
+    margin-left:60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center; 
+    }
+
+    .links{
+        margin-top: 10px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    
+    .pentagon{
+     display: block;
+     width: 20px;
+     height: 20px;
+     position:absolute; 
+     top: 10px;
+     left: 50px;
+     background-image: url(images/humburger.png);
+     background-size: cover;
+     
+    }
+
+    .pentagon:hover .links{
+        height: 0;
+    }
+
+
+     .text{
+     max-width: 1000px;
+     margin: 120px auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: white;
+     text-align:center;
+    }
+
+   .long-text{
+    margin-top: 10px;
+   }
+
+   .what-div{
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+    }
+    .testiomonial{
+        width: 60%;
+        margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+   }
+   .testiomonial div{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+   }
+
+   .testiomonial div p,h3{
+    margin: 0;
+   }
+   .testiomonial div img{
+    width: 90px;
+   }
+
+    }
+
+
+    @media (min-width:480px) and (max-width:1000px){
+
+      
+.nav{
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.top-img{
+    width: 100vw;
+    height: 100vh;
+}
+
+.links{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.pentagon{
+    display: none;
+}
+
+.text{
+     max-width: 1000px;
+     margin: 180px auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: white;
+     text-align:center;
+    }
+
+
+    .what-div{
+        text-align: center;
+        width: 80%;
+        margin: 10px auto;
+    }
+    .testiomonial{
+        width: 70%;
+        margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 25px;
+    row-gap: 25px;
+   }
+   .testiomonial div{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+   }
+   .testiomonial div img{
+    width: 90px;
+   }
+
+}
+
